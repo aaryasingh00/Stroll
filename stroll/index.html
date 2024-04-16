@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroll - Pomodoro</title>
+    <link rel="shortcut icon" href="pomo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="blur"></div>
+    <video  id="background-video"  autoplay loop muted poster="">
+        <source src="office.mp4" type="video/mp4">
+    </video>
+    <!--<video autoplay loop muted poster="" id="background-video">-->
+
+    <!--<div class="navbar" id="navbar">
+        <img src="" alt="" class="">
+        <nav>
+            <h3>Stroll</h3>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+
+        </nav>
+    </div>-->
+    <div id="aboutus">
+        <a href="aboutpomo.html"> Whats pomodoro??</a>
+        <a href="Aboutus.html">About us</a>
+    </div>
+    <div class="linedown">
+        <div>stroll</div>
+    </div>
+    <div id="header">
+        <img src="logostroll.png" id="pomo">
+    </div>
+    <div class="container">
+        
+        <div id="addtask">
+            <input type="text" id="inputbox" placeholder="Add Tasks here..." >
+            <button id="btn">Add</button>
+        </div>
+
+        <div id="tasks"></div>
+
+    </div>
+    <div id="spotifyplaylist">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5YHjaK7w0G690vmyEiob1C?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!--width="200" height="450"-->
+    </div>
+    <div id="timer">
+        <div id="time">
+            <span id="minutes">25</span>
+            <span id="colon">:</span>
+            <span id="seconds">00</span>
+        </div>
+        <div id="filler"></div>
+    </div>
+    
+
+    <div id="pomodoro-app">
+        <div id="container1">
+          
+      
+            <div id="buttons">
+                <button id="work">Work</button>
+                <button id="shortBreak">Short Break</button>
+                <button id="longBreak">Long Break</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+      
+    </div>
+     
+    <script src="strolljs.js"></script>
+
+</body>
+</html>

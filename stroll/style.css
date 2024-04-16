@@ -1,0 +1,349 @@
+:root{
+    --color1: #9fc088;
+    --color2: #e8c07d;
+    --color3: #cc704b;
+    --color4: #614124;
+    --color5: #e0d8b0;
+    --color6: #fcffe7;
+    --color7: #dea057;
+    --color8: #ce9461;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+body{
+    background-color: var(--color2);
+    
+}
+::selection{
+    display: none;
+}
+
+#spotifyplaylist{
+    border: 5px solid /*white*/ var(--color7);
+    padding: 0px;
+    /* border:  solid var(--color1); */
+    object-position: left;
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    z-index: 2;
+}
+
+#background-video{
+    margin-left: -17px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background: url('office.mp4');*/
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#pomo{
+    object-position: -40px -110px;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    
+    
+    
+}
+
+.container{
+    width: 30%;
+    position: fixed;
+    top: 2%;
+    right: -1%;
+    text-align: center;
+    padding: 1px;
+    
+    /*font-family: "Apple Chancery", cursive;*/
+}
+
+#header{
+    color: /*rgb(180, 180, 180)*/ var(--color1);
+    /* border: 3px solid rgb(150, 150, 150) var(--color5);*/
+    border-radius: 50px;
+    align-items: center;
+    object-position: center;
+    text-align: center;
+    width: 500px;
+    position: absolute;
+    top: 20px;
+    right: 32%;
+}
+
+#inputbox{
+    border: 3px solid /*white*/ var(--color7);
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: transparent;
+    box-shadow: 3px 5px 3px 2px var(--color7);
+    border-radius: 20px;
+    width: 50%;
+    padding: 8px;
+    font-family: "Apple Chancery", cursive;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+
+#btn{
+    width:15%;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    size-adjust: 10px;
+    cursor: pointer;
+    border: solid var(--color7);
+    background-color: var(--color2);
+    font-family: "Apple Chancery", cursive;
+    color: var(--color3);
+    font-size: large;
+    box-shadow: 3px 5px 3px 2px var(--color7);
+}
+
+#btn:hover
+{
+    background-color: var(--color7);
+}
+
+
+.task{
+    background-color: transparent;
+    /*this is old code and not required but i put it here for reference*/
+    /*height: 50px;
+    width: 200px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 56px;*/
+    height: 50px;
+    width: 375px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color3);
+    cursor: pointer;
+}
+.task span{
+    font-family: "Apple Chancery", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(12, 12, 59);
+}
+.task button{
+    background-color: var(--color2);
+    color: var(--color5);
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.task button:hover{
+    background-color: var(--color3);
+    color: var(--color2);
+    
+
+}
+.task .fa-trash-alt:hover{
+    animation: bounce 10s infinite;
+
+}
+@keyframes bounce {
+    14%{
+        color: red;
+    }
+    28%{
+        color: orange;
+    }
+    42%{
+        color: yellow;
+    }
+    56%{
+        color: green;
+    }
+    70%{
+        color: blue;
+    }
+    84%{
+        color: indigo;
+    }
+    98%{
+        color: violet;
+    }
+    
+}
+.completed{
+    text-decoration: line-through;
+    color: white;
+}
+#button{
+    background-color: transparent;
+    border: 3px solid var(--color3);
+    margin-top: 33px;
+    border-radius: 10px;
+    padding: 3px 20px;
+    color: brown;
+    cursor: pointer;
+
+}
+#container1{
+    border:1px solid var(--color4);
+    border-radius :20px;
+    width:400px;
+    margin:1px;
+    padding:1px;
+    object-position: center;
+    object-fit: cover;
+    text-align:center;
+    background : var(--color3);
+    position: fixed;
+    top: 28%;
+    left: 32%;
+}
+  
+#timer{ 
+    font-size:50px; 
+    margin:0;
+    border : 5px solid var(--color5);
+    color:var(--color5); 
+    background-color: var(--color6);
+    font-size:50px; 
+    margin:10px auto;
+    width:200px;
+    height: 60px;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+    position: absolute;
+    text-align: center;
+    
+    left: 70px;
+    top: 60px;
+    z-index: 2;
+     
+    /* font-size:50px; 
+    margin:0;
+    border : 5px solid var(--color5);
+    border-radius:50%;
+    color: var(--color5);
+    background-color: var(--color6);
+    font-family: cursive;
+    width: 150px;
+    height: 150px;
+    overflow:hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+    position: absolute;
+    text-align: center;
+    left: 80px;
+    top: 30px;
+    z-index: 2; */
+    
+}
+  
+#time{
+    
+    z-index : 1;
+    position:relative;
+}
+  
+#filler{
+    background : #ddffcc;
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+}
+  
+#buttons button { 
+    background: var(--color7); 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:10px auto;
+    font-size:14px;
+    height : 50px;
+    border-radius : 50px;
+    
+}
+  
+#buttons button#shortBreak{
+    background : var(--color5);
+}
+  
+#buttons button#longBreak{
+    background : var(--color8);
+}
+  
+#buttons button#stop{
+    background : var(--color2);
+}
+#aboutus{
+    margin: 0;
+    position: absolute;
+    background-color: var(--color4);
+    width: 100%;
+    
+}
+#aboutus a{
+    float: right;
+    color: var(--color6);
+    text-decoration: none;
+    padding: 0 10px;
+}
+#aboutus a:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+}
+.linedown{
+    margin: 0;
+    position: absolute;
+    background-color: var(--color4);
+    width: 100%;
+    content: " ";
+    color: var(--color4);
+    bottom: 0;
+
+}
+#blur{
+    height: 100%;
+    width: 70vw;
+    background-color: var(--color4);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: blur(2px);
+    z-index: -2;
+    padding-bottom: 0;
+    background-size: cover;
+}
